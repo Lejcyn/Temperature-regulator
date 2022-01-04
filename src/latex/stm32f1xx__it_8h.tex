@@ -1,0 +1,389 @@
+\section{stm32f1xx\+\_\+it.\+h File Reference}
+\label{stm32f1xx__it_8h}\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+
+
+This file contains the headers of the interrupt handlers.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+Include dependency graph for stm32f1xx\+\_\+it.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ N\+M\+I\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles N\+MI exception. \end{DoxyCompactList}\item 
+void \textbf{ Hard\+Fault\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Hard Fault exception. \end{DoxyCompactList}\item 
+void \textbf{ Mem\+Manage\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Memory Manage exception. \end{DoxyCompactList}\item 
+void \textbf{ Bus\+Fault\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Bus Fault exception. \end{DoxyCompactList}\item 
+void \textbf{ Usage\+Fault\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Usage Fault exception. \end{DoxyCompactList}\item 
+void \textbf{ S\+V\+C\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles S\+V\+Call exception. \end{DoxyCompactList}\item 
+void \textbf{ Debug\+Mon\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Debug Monitor exception. \end{DoxyCompactList}\item 
+void \textbf{ Pend\+S\+V\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Pend\+S\+VC exception. \end{DoxyCompactList}\item 
+void \textbf{ Sys\+Tick\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles Sys\+Tick Handler. \end{DoxyCompactList}\item 
+void \textbf{ E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler} (void)
+\item 
+void \textbf{ U\+S\+A\+R\+T1\+\_\+\+I\+R\+Q\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em This function handles P\+PP interrupt request. \end{DoxyCompactList}\item 
+void \textbf{ E\+X\+T\+I0\+\_\+\+I\+R\+Q\+Handler} ()
+\item 
+void \textbf{ E\+X\+T\+I1\+\_\+\+I\+R\+Q\+Handler} ()
+\item 
+void \textbf{ E\+X\+T\+I2\+\_\+\+I\+R\+Q\+Handler} ()
+\item 
+void \textbf{ T\+I\+M2\+\_\+\+I\+R\+Q\+Handler} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \textbf{ wynikel} [8]
+\begin{DoxyCompactList}\small\item\em Tablica przechowujaca ciag znakow wysylany do L\+CD. \end{DoxyCompactList}\item 
+char \textbf{ wynik2} [8]
+\begin{DoxyCompactList}\small\item\em Tablica przechowujaca ciag znakow wysylany do L\+CD. \end{DoxyCompactList}\item 
+char \textbf{ wynik} [8]
+\begin{DoxyCompactList}\small\item\em Tablica przechowujaca ciag znakow wysylany do L\+CD. \end{DoxyCompactList}\item 
+float \textbf{ calka}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca wspolczynnik calkowy P\+ID. \end{DoxyCompactList}\item 
+float \textbf{ rozniczka}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca wspolczynnik rozniczkowy P\+ID. \end{DoxyCompactList}\item 
+int \textbf{ a}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\item 
+int \textbf{ A\+D\+C1\+Val}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca dane z A\+DC. \end{DoxyCompactList}\item 
+int \textbf{ ustpocz}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza do obliczania zmiany nastaw. \end{DoxyCompactList}\item 
+int \textbf{ ustkon}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza do obliczania zmiany nastaw. \end{DoxyCompactList}\item 
+int \textbf{ ustdelta}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza do obliczania zmiany nastaw. \end{DoxyCompactList}\item 
+int \textbf{ ustaw1}
+\begin{DoxyCompactList}\small\item\em Czesc calkowita temperatury ustawionej. \end{DoxyCompactList}\item 
+int \textbf{ ustaw2}
+\begin{DoxyCompactList}\small\item\em Czesc ulamkowa temperatury ustawionej. \end{DoxyCompactList}\item 
+int \textbf{ flaga}
+\item 
+int \textbf{ czy}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\item 
+int \textbf{ ustaw}
+\item 
+int \textbf{ dosredniej} [10]
+\begin{DoxyCompactList}\small\item\em Tablica zmiennych typu int do usredniania danych wysylanych do L\+CD. \end{DoxyCompactList}\item 
+int \textbf{ licznik}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\item 
+int \textbf{ odl}
+\begin{DoxyCompactList}\small\item\em Uchyb miedzy nastawami a temperatura aktualna. \end{DoxyCompactList}\item 
+int \textbf{ odl1}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\item 
+int \textbf{ speed}
+\item 
+int \textbf{ temp1}
+\begin{DoxyCompactList}\small\item\em Czesc calkowita temperatury aktualnej. \end{DoxyCompactList}\item 
+int \textbf{ temp2}
+\begin{DoxyCompactList}\small\item\em Czesc ulamkowa temperatury aktualnej. \end{DoxyCompactList}\item 
+int \textbf{ tempmV}
+\begin{DoxyCompactList}\small\item\em Temperatura wyrazona w mV. \end{DoxyCompactList}\item 
+int \textbf{ wartosc\+\_\+akt}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\item 
+int \textbf{ wartosc\+\_\+ust}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\item 
+int \textbf{ zmienna}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the headers of the interrupt handlers. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/\+February-\/2014 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2014 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+\subsection{Function Documentation}
+\mbox{\label{stm32f1xx__it_8h_a738473a5b43f6c92b80ce1d3d6f77ed9}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler@{E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler}}
+\index{E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler@{E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler()}
+{\footnotesize\ttfamily void E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\label{stm32f1xx__it_8h_aa4c2a5552e9bc49b1816ff532f558c74}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!a@{a}}
+\index{a@{a}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{a}
+{\footnotesize\ttfamily int a}
+
+
+
+Zmienna pomocnicza. 
+
+\mbox{\label{stm32f1xx__it_8h_a5cd305b6f92dfe14d593fbd92adde764}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!A\+D\+C1\+Val@{A\+D\+C1\+Val}}
+\index{A\+D\+C1\+Val@{A\+D\+C1\+Val}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{A\+D\+C1\+Val}
+{\footnotesize\ttfamily int A\+D\+C1\+Val}
+
+
+
+Zmienna przechowujaca dane z A\+DC. 
+
+\mbox{\label{stm32f1xx__it_8h_a1599d69908f2475a5485626a9e09682e}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!czy@{czy}}
+\index{czy@{czy}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{czy}
+{\footnotesize\ttfamily int czy}
+
+
+
+Zmienna pomocnicza. 
+
+\mbox{\label{stm32f1xx__it_8h_acb15216ad4bede8a8601523f74919274}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!dosredniej@{dosredniej}}
+\index{dosredniej@{dosredniej}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{dosredniej}
+{\footnotesize\ttfamily int dosredniej[10]}
+
+
+
+Tablica zmiennych typu int do usredniania danych wysylanych do L\+CD. 
+
+\mbox{\label{stm32f1xx__it_8h_a49df2b70d5e66a4d1a1cf5ee7f38cc25}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!flaga@{flaga}}
+\index{flaga@{flaga}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{flaga}
+{\footnotesize\ttfamily int flaga}
+
+\mbox{\label{stm32f1xx__it_8h_aa8f40e683e2c50c3b17621add5498b47}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!licznik@{licznik}}
+\index{licznik@{licznik}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{licznik}
+{\footnotesize\ttfamily int licznik}
+
+
+
+Zmienna pomocnicza. 
+
+\mbox{\label{stm32f1xx__it_8h_ae9cad0902e31e685974e1d5ab75e27f5}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!odl@{odl}}
+\index{odl@{odl}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{odl}
+{\footnotesize\ttfamily int odl}
+
+
+
+Uchyb miedzy nastawami a temperatura aktualna. 
+
+\mbox{\label{stm32f1xx__it_8h_a6399e602261099a30ee18f7d10181897}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!odl1@{odl1}}
+\index{odl1@{odl1}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{odl1}
+{\footnotesize\ttfamily int odl1}
+
+
+
+Zmienna pomocnicza. 
+
+\mbox{\label{stm32f1xx__it_8h_adab318b87543ed09d97060b6817a5eff}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!rozniczka@{rozniczka}}
+\index{rozniczka@{rozniczka}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{rozniczka}
+{\footnotesize\ttfamily float rozniczka}
+
+
+
+Zmienna przechowujaca wspolczynnik rozniczkowy P\+ID. 
+
+\mbox{\label{stm32f1xx__it_8h_a218b4f7c6cc2681a99c23a3b089d68b1}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!speed@{speed}}
+\index{speed@{speed}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{speed}
+{\footnotesize\ttfamily int speed}
+
+\mbox{\label{stm32f1xx__it_8h_a5edd9ea5120a42a5e8c70fea7891eb85}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!temp1@{temp1}}
+\index{temp1@{temp1}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{temp1}
+{\footnotesize\ttfamily int temp1}
+
+
+
+Czesc calkowita temperatury aktualnej. 
+
+\mbox{\label{stm32f1xx__it_8h_a9bcfc2e63ea1a2d77fa94d1617c37b41}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!temp2@{temp2}}
+\index{temp2@{temp2}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{temp2}
+{\footnotesize\ttfamily int temp2}
+
+
+
+Czesc ulamkowa temperatury aktualnej. 
+
+\mbox{\label{stm32f1xx__it_8h_a002e8bb13d5591d04eff22b6b60bf7ea}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!tempmV@{tempmV}}
+\index{tempmV@{tempmV}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{tempmV}
+{\footnotesize\ttfamily int tempmV}
+
+
+
+Temperatura wyrazona w mV. 
+
+\mbox{\label{stm32f1xx__it_8h_a8cdadc42d5581c7ef07dcf9884149a46}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!ustaw@{ustaw}}
+\index{ustaw@{ustaw}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{ustaw}
+{\footnotesize\ttfamily int ustaw}
+
+\mbox{\label{stm32f1xx__it_8h_ab37d782a8f66a51965b5eb267ba0ee34}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!ustaw1@{ustaw1}}
+\index{ustaw1@{ustaw1}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{ustaw1}
+{\footnotesize\ttfamily int ustaw1}
+
+
+
+Czesc calkowita temperatury ustawionej. 
+
+\mbox{\label{stm32f1xx__it_8h_a7e4f04c42c5473fb4c6a01cb26749989}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!ustaw2@{ustaw2}}
+\index{ustaw2@{ustaw2}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{ustaw2}
+{\footnotesize\ttfamily int ustaw2}
+
+
+
+Czesc ulamkowa temperatury ustawionej. 
+
+\mbox{\label{stm32f1xx__it_8h_a89859a50430c09fd01681829ca09f51e}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!ustdelta@{ustdelta}}
+\index{ustdelta@{ustdelta}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{ustdelta}
+{\footnotesize\ttfamily int ustdelta}
+
+
+
+Zmienna pomocnicza do obliczania zmiany nastaw. 
+
+\mbox{\label{stm32f1xx__it_8h_a1ea99f45e8f9df3955d6ecdf38e49695}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!ustkon@{ustkon}}
+\index{ustkon@{ustkon}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{ustkon}
+{\footnotesize\ttfamily int ustkon}
+
+
+
+Zmienna pomocnicza do obliczania zmiany nastaw. 
+
+\mbox{\label{stm32f1xx__it_8h_a3eca403f4272db7945453910cf7b6e14}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!ustpocz@{ustpocz}}
+\index{ustpocz@{ustpocz}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{ustpocz}
+{\footnotesize\ttfamily int ustpocz}
+
+
+
+Zmienna pomocnicza do obliczania zmiany nastaw. 
+
+\mbox{\label{stm32f1xx__it_8h_a11519ab04db561211110815e842f6711}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!wartosc\+\_\+akt@{wartosc\+\_\+akt}}
+\index{wartosc\+\_\+akt@{wartosc\+\_\+akt}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{wartosc\+\_\+akt}
+{\footnotesize\ttfamily int wartosc\+\_\+akt}
+
+
+
+Zmienna pomocnicza. 
+
+\mbox{\label{stm32f1xx__it_8h_a42d4dcc6b77b55bf9b92949efc942b25}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!wartosc\+\_\+ust@{wartosc\+\_\+ust}}
+\index{wartosc\+\_\+ust@{wartosc\+\_\+ust}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{wartosc\+\_\+ust}
+{\footnotesize\ttfamily int wartosc\+\_\+ust}
+
+
+
+Zmienna pomocnicza. 
+
+\mbox{\label{stm32f1xx__it_8h_aa4fcda0acda55ed1889ee9e0c652d23b}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!wynik@{wynik}}
+\index{wynik@{wynik}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{wynik}
+{\footnotesize\ttfamily char wynik[8]}
+
+
+
+Tablica przechowujaca ciag znakow wysylany do L\+CD. 
+
+File \+: \doxyref{main.\+c}{p.}{main_8c}
+
+Author \+: Tomasz Kowalczyk
+
+Abstract \+: main function.
+
+Functions \+: main
+
+Environment \+: Atollic True\+S\+T\+U\+D\+I\+O/\+S\+T\+M32 S\+T\+Microelectronics S\+T\+M32\+F10x Standard Peripherals Library
+
+Distribution\+: The file is distributed \char`\"{}as is\char`\"{}, without any warranty of any kind.
+
+(c)Copyright Atollic AB. You may use this file as-\/is or modify it according to the needs of your project. This file may only be built (assembled or compiled and linked) using the Atollic True\+S\+T\+U\+D\+I\+O(\+R) product. The use of this file together with other tools than Atollic True\+S\+T\+U\+D\+I\+O(\+R) is not permitted.
+
+Regulator temperatury z wykorzystaniem ogniwa Peltiera. Zadaniem regulatora jest uzyskanie stabilnej i trwa³ej temperatury w konkretnym obszarze pomiarowym. G³ównym zastosowaniem regulatora bêdzie wykorzystanie go do kalibracji zewnêtrznych czujników temperatury i badanie ich dok³adnoœci w ró¿nych temperaturach. Przewidywany zakres uzyskiwalnych temperatur mieœci siê w przedziale $<$-\/10;70$>$°C . Zmiana temperatury pomiêdzy granicznymi mo¿liwymi temperaturami powinna nie trwaæ d³u¿ej ni¿ minutê.
+
+Wykaz realizowanych finkcji\+: Regulacja temperatury w komorze pomiarowej Wyœwietlanie aktualnej temperatury i ustalonej temperatury na wyœwietlaczu L\+CD Mo¿liwoœæ wyboru konkretnej po¿¹danej temperatury z dostêpnego przedzia³u za pomoc¹ 2 przycisków, regulacja skokowa oraz p³ynna przy przytrzymaniu przycisku. Odczyt temperatury komory pomiarowej z dok³adnoœci¹ do 2 °C Mo¿liwoœæ wyboru ¿¹danej temperatury z rozdzielczoœci¹ 0,1°C Wysy³anie aktualnej i ¿¹danej temperatury do komputera PC za pomoc¹ portu szeregowego( Dane wysy³ane poprzez U\+A\+RT i konwertowane do formatu U\+SB poprzez zewnêtrzny konwerter). \mbox{\label{stm32f1xx__it_8h_a4a595dbdb7d7c03f5cadabbf8be723d7}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!wynik2@{wynik2}}
+\index{wynik2@{wynik2}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{wynik2}
+{\footnotesize\ttfamily char wynik2[8]}
+
+
+
+Tablica przechowujaca ciag znakow wysylany do L\+CD. 
+
+\mbox{\label{stm32f1xx__it_8h_a34568564740e76aecafb66842c4dd437}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!wynikel@{wynikel}}
+\index{wynikel@{wynikel}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{wynikel}
+{\footnotesize\ttfamily char wynikel[8]}
+
+
+
+Tablica przechowujaca ciag znakow wysylany do L\+CD. 
+
+\mbox{\label{stm32f1xx__it_8h_ab12f691430c725077884b319292b3d12}} 
+\index{stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}!zmienna@{zmienna}}
+\index{zmienna@{zmienna}!stm32f1xx\+\_\+it.\+h@{stm32f1xx\+\_\+it.\+h}}
+\subsubsection{zmienna}
+{\footnotesize\ttfamily int zmienna}
+
+
+
+Zmienna pomocnicza. 
+

@@ -1,0 +1,11 @@
+digraph "fiprintf"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="fiprintf",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ts_formatlength",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny__printf_8c.html#a37c0a321987f1cacc976e3153110694a"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ts_formatstring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tiny__printf_8c.html#a2ad0dde0523459a3606aa5f7d7d8af6a"];
+}

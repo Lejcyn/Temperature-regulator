@@ -1,0 +1,193 @@
+\section{lcd4bit.\+h File Reference}
+\label{lcd4bit_8h}\index{lcd4bit.\+h@{lcd4bit.\+h}}
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+Include dependency graph for lcd4bit.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+D4}~((u16)0x0008)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+D5}~((u16)0x0004)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+D6}~((u16)0x0002)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+D7}~((u16)0x0001)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+D\+\_\+\+A\+LL}~((u16)0x000\+F)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+RS}~((u16)0x1000)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+RW}~((u16)0x0800)
+\item 
+\#define \textbf{ L\+C\+D\+\_\+\+EN}~((u16)0x0400)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \textbf{ L\+C\+D\+\_\+\+Read\+Byte} (void)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Send\+Byte} (uint8\+\_\+t cmd)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Send\+Cmd} (uint8\+\_\+t cmd)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Send\+Data} (uint8\+\_\+t data)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Send\+Text} (uint8\+\_\+t $\ast$text)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Clear} (void)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Go\+To} (uint8\+\_\+t wers, uint8\+\_\+t kol)
+\item 
+void \textbf{ L\+C\+D\+\_\+\+Init} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\label{lcd4bit_8h_ade7e247311032a474711416da480ed8b}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+D4@{L\+C\+D\+\_\+\+D4}}
+\index{L\+C\+D\+\_\+\+D4@{L\+C\+D\+\_\+\+D4}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+D4}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+D4~((u16)0x0008)}
+
+\mbox{\label{lcd4bit_8h_a5b91fe480c768d4f246f3890207bfbfc}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+D5@{L\+C\+D\+\_\+\+D5}}
+\index{L\+C\+D\+\_\+\+D5@{L\+C\+D\+\_\+\+D5}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+D5}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+D5~((u16)0x0004)}
+
+\mbox{\label{lcd4bit_8h_a72e105fcda5fd1c07b5f391379a439d4}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+D6@{L\+C\+D\+\_\+\+D6}}
+\index{L\+C\+D\+\_\+\+D6@{L\+C\+D\+\_\+\+D6}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+D6}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+D6~((u16)0x0002)}
+
+\mbox{\label{lcd4bit_8h_abd65075e01c7413419581aedee5bcc24}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+D7@{L\+C\+D\+\_\+\+D7}}
+\index{L\+C\+D\+\_\+\+D7@{L\+C\+D\+\_\+\+D7}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+D7}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+D7~((u16)0x0001)}
+
+\mbox{\label{lcd4bit_8h_a88dc5e439ccb1cf2d3a5536ad156912a}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+D\+\_\+\+A\+LL@{L\+C\+D\+\_\+\+D\+\_\+\+A\+LL}}
+\index{L\+C\+D\+\_\+\+D\+\_\+\+A\+LL@{L\+C\+D\+\_\+\+D\+\_\+\+A\+LL}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+D\+\_\+\+A\+LL}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+D\+\_\+\+A\+LL~((u16)0x000\+F)}
+
+\mbox{\label{lcd4bit_8h_a1640ffbc0d8ec0f7edb04a2b93918072}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+EN@{L\+C\+D\+\_\+\+EN}}
+\index{L\+C\+D\+\_\+\+EN@{L\+C\+D\+\_\+\+EN}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+EN}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+EN~((u16)0x0400)}
+
+\mbox{\label{lcd4bit_8h_a4781e073871c6f27f89b9463ad3a4ed1}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+RS@{L\+C\+D\+\_\+\+RS}}
+\index{L\+C\+D\+\_\+\+RS@{L\+C\+D\+\_\+\+RS}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+RS}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+RS~((u16)0x1000)}
+
+\mbox{\label{lcd4bit_8h_a26089a10ddd59a0dc7283c19ccc02533}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+RW@{L\+C\+D\+\_\+\+RW}}
+\index{L\+C\+D\+\_\+\+RW@{L\+C\+D\+\_\+\+RW}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+RW}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+RW~((u16)0x0800)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\label{lcd4bit_8h_ae60d0b62d7eb3fa31266c095d7b3c245}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Clear@{L\+C\+D\+\_\+\+Clear}}
+\index{L\+C\+D\+\_\+\+Clear@{L\+C\+D\+\_\+\+Clear}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Clear()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\label{lcd4bit_8h_ae5e5bb0b14eca521d8b5f735ec5fa00c}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Go\+To@{L\+C\+D\+\_\+\+Go\+To}}
+\index{L\+C\+D\+\_\+\+Go\+To@{L\+C\+D\+\_\+\+Go\+To}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Go\+To()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Go\+To (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{wers,  }\item[{uint8\+\_\+t}]{kol }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\label{lcd4bit_8h_aa53c9d40f3aa552a9974cd55ac510cb3}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Init@{L\+C\+D\+\_\+\+Init}}
+\index{L\+C\+D\+\_\+\+Init@{L\+C\+D\+\_\+\+Init}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Init()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
+\mbox{\label{lcd4bit_8h_ab59396403153e41cf3c098b8bff86da6}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Read\+Byte@{L\+C\+D\+\_\+\+Read\+Byte}}
+\index{L\+C\+D\+\_\+\+Read\+Byte@{L\+C\+D\+\_\+\+Read\+Byte}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Read\+Byte()}
+{\footnotesize\ttfamily uint8\+\_\+t L\+C\+D\+\_\+\+Read\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Zmiana konfiguracji wyprowadzen na wejsciach
+
+odczyt starszej polowy
+
+odczyt mlodszej polowy
+
+Powrot do pierwotnych ustawien wyprowadzen Here is the call graph for this function\+:
+% FIG 8
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\label{lcd4bit_8h_a17ebb04f0339e3ad2399a6b95f1409e7}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Send\+Byte@{L\+C\+D\+\_\+\+Send\+Byte}}
+\index{L\+C\+D\+\_\+\+Send\+Byte@{L\+C\+D\+\_\+\+Send\+Byte}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Send\+Byte()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Send\+Byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+4x w prawo
+
+zapis starszej polowy
+
+maskowanie czterech mlodszych bitow
+
+zapis mlodszej polowy
+
+czekaj na zakonczenie operacji Here is the call graph for this function\+:
+% FIG 10
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\label{lcd4bit_8h_a6fe412af8613c79d0e88b03b012265dc}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Send\+Cmd@{L\+C\+D\+\_\+\+Send\+Cmd}}
+\index{L\+C\+D\+\_\+\+Send\+Cmd@{L\+C\+D\+\_\+\+Send\+Cmd}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Send\+Cmd()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Send\+Cmd (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\label{lcd4bit_8h_aa09da605411449b125a3734940ca8f41}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Send\+Data@{L\+C\+D\+\_\+\+Send\+Data}}
+\index{L\+C\+D\+\_\+\+Send\+Data@{L\+C\+D\+\_\+\+Send\+Data}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Send\+Data()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Send\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\label{lcd4bit_8h_ad0c262e2f73ff4d8d2fd198f76e102a8}} 
+\index{lcd4bit.\+h@{lcd4bit.\+h}!L\+C\+D\+\_\+\+Send\+Text@{L\+C\+D\+\_\+\+Send\+Text}}
+\index{L\+C\+D\+\_\+\+Send\+Text@{L\+C\+D\+\_\+\+Send\+Text}!lcd4bit.\+h@{lcd4bit.\+h}}
+\subsubsection{L\+C\+D\+\_\+\+Send\+Text()}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Send\+Text (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{text }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 16
+Here is the caller graph for this function\+:
+% FIG 17

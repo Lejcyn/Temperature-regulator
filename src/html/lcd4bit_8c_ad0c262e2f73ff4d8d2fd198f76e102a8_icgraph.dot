@@ -1,0 +1,17 @@
+digraph "LCD_SendText"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node120 [label="LCD_SendText",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node120 -> Node121 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node121 [label="init_wszystko",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_init__all_8h.html#acdbbebf8dc17d0b9825a2608b3108183",tooltip="funkcja inicjalizujaca peryferia "];
+  Node121 -> Node122 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node122 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#acdef7a1fd863a6d3770c1268cb06add3"];
+  Node120 -> Node123 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node123 [label="TIM2_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_o___toggle.html#ga38ad4725462bdc5e86c4ead4f04b9fc2"];
+  Node120 -> Node124 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node124 [label="EXTI1_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_o___toggle.html#ga7e9055d1f4a14ef6eb3990a77efc8983"];
+  Node120 -> Node125 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node125 [label="EXTI2_IRQHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___i_o___toggle.html#ga8f18ae41a8775fbfc871c2d9c8605e4b"];
+}

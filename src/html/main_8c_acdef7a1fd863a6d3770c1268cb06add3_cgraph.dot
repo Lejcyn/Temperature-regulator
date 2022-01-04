@@ -1,0 +1,37 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="init_wszystko",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_init__all_8c.html#acdbbebf8dc17d0b9825a2608b3108183",tooltip="funkcja inicjalizujaca peryferia "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LCD_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#aa53c9d40f3aa552a9974cd55ac510cb3"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="delay_ms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#a8aa473f8ae9a91df4bc9ea700983c72d"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="delaymikrose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#a3bdf4b71c2ded53c6ab07b1caf6d25f7"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LCD_SendCmd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#a6fe412af8613c79d0e88b03b012265dc"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LCD_SendByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#a17ebb04f0339e3ad2399a6b95f1409e7"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="delay_us",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#a3f88352450dad51d82e4bf84a0a439a1"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LCD_ReadByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#ab59396403153e41cf3c098b8bff86da6"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="delaymilise",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#a487c23c6931fcdfe8e521ab18570e54a"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="LCD_Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#ae60d0b62d7eb3fa31266c095d7b3c245"];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="LCD_GoTo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#ae5e5bb0b14eca521d8b5f735ec5fa00c"];
+  Node11 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="LCD_SendText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#ad0c262e2f73ff4d8d2fd198f76e102a8"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="LCD_SendData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lcd4bit_8c.html#aa09da605411449b125a3734940ca8f41"];
+  Node13 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

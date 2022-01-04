@@ -1,0 +1,32 @@
+\section{Init\+\_\+all.\+c File Reference}
+\label{_init__all_8c}\index{Init\+\_\+all.\+c@{Init\+\_\+all.\+c}}
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Init\+\_\+all.\+h\char`\"{}}\newline
+Include dependency graph for Init\+\_\+all.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ init\+\_\+wszystko} ()
+\begin{DoxyCompactList}\small\item\em funkcja inicjalizujaca peryferia \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\label{_init__all_8c_acdbbebf8dc17d0b9825a2608b3108183}} 
+\index{Init\+\_\+all.\+c@{Init\+\_\+all.\+c}!init\+\_\+wszystko@{init\+\_\+wszystko}}
+\index{init\+\_\+wszystko@{init\+\_\+wszystko}!Init\+\_\+all.\+c@{Init\+\_\+all.\+c}}
+\subsubsection{init\+\_\+wszystko()}
+{\footnotesize\ttfamily void init\+\_\+wszystko (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+funkcja inicjalizujaca peryferia 
+
+A\+DC P\+O\+M\+I\+AR T\+E\+M\+P\+E\+R\+A\+T\+U\+RY
+
+U\+S\+A\+R\+T1 TX
+
+U\+S\+A\+R\+T1 RX Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
